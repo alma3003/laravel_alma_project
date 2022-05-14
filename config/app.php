@@ -163,7 +163,6 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
-        FarhanWazir\GoogleMaps\GMapsServiceProvider::class,
 
         /*
          * Package Service Providers...
@@ -191,10 +190,8 @@ return [
     | the aliases are "lazy" loaded so they don't hinder performance.
     |
     */
-
     'aliases' => Facade::defaultAliases()->merge([
         // 'ExampleClass' => App\Example\ExampleClass::class,
-        'GMaps' => FarhanWazir\GoogleMaps\Facades\GMapsFacade::class,
     ])->toArray(),
 
 ];
